@@ -1,4 +1,4 @@
-package com.example.administrator.chatdemo;
+package com.example.administrator.chatdemo.listener;
 
 import android.content.Context;
 import android.graphics.drawable.AnimationDrawable;
@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.administrator.chatdemo.App;
 import com.example.administrator.chatdemo.bean.ChatMessageBean;
 import com.example.administrator.chatdemo.widget.PlayButton;
 

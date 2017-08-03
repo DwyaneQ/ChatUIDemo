@@ -1,4 +1,4 @@
-package com.example.administrator.chatdemo;
+package com.example.administrator.chatdemo.ui;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -19,6 +19,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.administrator.chatdemo.App;
+import com.example.administrator.chatdemo.R;
 import com.example.administrator.chatdemo.adapter.ChatRecyclerAdapter;
 import com.example.administrator.chatdemo.bean.ChatConst;
 import com.example.administrator.chatdemo.bean.ChatMessageBean;

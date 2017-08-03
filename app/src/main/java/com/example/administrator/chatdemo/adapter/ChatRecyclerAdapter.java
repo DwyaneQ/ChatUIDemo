@@ -5,9 +5,9 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.ViewGroup;
 
-import com.example.administrator.chatdemo.PlayButtonClickListener;
 import com.example.administrator.chatdemo.bean.ChatMessageBean;
 import com.example.administrator.chatdemo.bean.ChatMessageType;
+import com.example.administrator.chatdemo.listener.PlayButtonClickListener;
 import com.example.administrator.chatdemo.viewholder.ChatItemAudioHolder;
 import com.example.administrator.chatdemo.viewholder.ChatItemHolder;
 import com.example.administrator.chatdemo.viewholder.ChatItemImageHolder;

@@ -1,4 +1,4 @@
-package com.example.administrator.chatdemo;
+package com.example.administrator.chatdemo.ui;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
+import com.example.administrator.chatdemo.R;
 import com.example.administrator.chatdemo.utils.Constants;
 import com.example.administrator.chatdemo.utils.PhotoUtils;
 

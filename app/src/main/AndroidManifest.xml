@@ -25,7 +25,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ServiceChatActivity"
+            android:name=".ui.ServiceChatActivity"
             android:windowSoftInputMode="adjustResize|stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ImageBrowserActivity" />
+        <activity android:name=".ui.ImageBrowserActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
