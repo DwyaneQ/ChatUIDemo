@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/chat_item_audio_duration_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp" />
+
+    <com.example.administrator.chatdemo.widget.PlayButton xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chat_item_audio_play_btn"
+        style="@style/chat_play_btn"
+        android:background="@drawable/message_transfer_money_right"
+        android:orientation="vertical"
+        custom:left="false" />
+</LinearLayout>

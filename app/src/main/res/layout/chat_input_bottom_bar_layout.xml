@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/bottom_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lly_input_bar"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/frame_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/ic_btn_voice"
+                android:padding="4dp" />
+
+            <com.example.administrator.chatdemo.widget.EmotionEditText
+                android:id="@+id/et_msg"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/msg_input_shape"
+                android:imeOptions="actionSend"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textSize="16sp" />
+
+            <com.example.administrator.chatdemo.widget.AudioRecordButton
+                android:id="@+id/voice_btn"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_recordnormal"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:padding="5dp"
+                android:text="@string/normal"
+                android:textColor="#727272"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_emoji"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/ic_btn_emoji"
+                android:padding="4dp" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@mipmap/ic_btn_more"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lly_emoji_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vPager"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="3dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp">
+
+                <com.example.administrator.chatdemo.widget.CircleIndicator
+                    android:id="@+id/ci_banner"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true" />
+
+
+                <TextView
+                    android:id="@+id/tv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/frame_blue_to_thin_bg"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/chat_send"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.administrator.chatdemo.widget.ChatBottomView
+                android:id="@+id/cbv_other"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

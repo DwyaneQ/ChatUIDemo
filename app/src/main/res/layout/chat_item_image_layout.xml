@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ImageView xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:id="@+id/chat_item_image_view"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:maxHeight="100dp"--><!--android:maxWidth="100dp"--><!--android:scaleType="centerCrop"--><!--android:src="@drawable/emoji_point_left" />-->
+<io.github.leibnik.chatimageview.ChatImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_item_image_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxHeight="130dp"
+    android:maxWidth="120dp"
+    app:arrow_height="9dp"
+    app:arrow_top="18dp"
+    app:arrow_width="9dp"
+    app:direction="left"
+    app:offset="5dp"
+    app:radius="7dp" />
